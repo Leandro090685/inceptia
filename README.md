@@ -1,0 +1,6 @@
+Ejercicio 1 : Definí la clase GeoAPI con las variables que se piden en el ejercicio. Luego cree el metodo 'is_hot_in_pehuajo', en el cual arme la URL a la cual realizar la solicitud HTTP GET a traves de la biblioteca requests.
+Utilizo try y except para manejar posibles errores en la solicitud.
+Con el metodo raise_for_status() de la clase Response verifico si la solicitud fue exitosa.
+Luego obtengo el dato de la temperatura y verifico si es mayor a 28 retorno True y en caso contrario retorno False
+
+Ejercicio 2 : Aqui en principio creo un nuevo DataFrame llamado 'available_products' que contiene solo los productos cuya cantidad es mayor a 0. Defino la funcion is_product_available la cual recibe dos parametros 'product_name' y 'quantity'. La solucion que pense para que el cliente no entre en un potencial loop infinito de intentos, fue realizar un bucle while y ayudar al cliente mostrando los productos disponibles y sus cantidades como asi tambien la posibilidad de cancelar en caso de querer cortar la ejecucion. En caso de cortar la ejecucion retorna False y en caso de lograr hacer el pedido con producto y cantidades correctas retorna True
